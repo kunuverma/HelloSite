@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./assets/css/seventhpage.css">
+
+
+  <title>seventhpage</title>
+</head>
+
+<body>
+
+  <!-- Sidenav -->
+
+  <div id="sideNav"
+    class="item-end absolute h-full min-h-fit right-0 z-10 max-[573px]:w-full hidden w-fit bg-[#f14435]">
+
+    <!-- upper div  -->
+    <div class="w-10 h-fit flex justify-center">
+      <button onclick="closeNav()"><img class="hover:opacity-75" src="./assets/images/side-nav/cross.png"
+          alt="cross"></button>
+    </div>
+
+    <!-- lower div  -->
+
+    <div class="flex flex-col mx-10">
+      <div>
+        <div class="flex items-center h-[70px] gap-y-10">
+          <div class="bg-white rounded-l-[5px] h-[50px] w-[50px] flex items-center justify-center">
+            <img src="./assets/images/side-nav/search-icon.png" class="h-[20px] w-[20px]" alt="search-icon" />
+          </div>
+
+          <div>
+            <select class="w-[187.3425px] focus:outline-none h-[50px] rounded-r-[5px] text-lg font-semibold"
+              name="country" id="country">
+              <option value="india">India</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex ">
+        <input placeholder="   Find cars, Mobile phones and more.."
+          class="h-[50px] focus:outline-none pl-5 pr-5 w-[300px] min-[300px]:w-[200px] md:w-[350px] mt-[10px] rounded-l-[5px]"
+          type="text" />
+
+        <div class="bg-[#FDEBE7] h-[50px] w-[58.055px] mt-[10px] rounded-r-[5px] flex place-content-center">
+          <button class="">
+            <img src="./assets/images/side-nav/search-icon.png" class="h-[24.375px] w-[24.375px]" alt="" />
+          </button>
+        </div>
+      </div>
+
+      <div class="h-[70px] flex -ml-1">
+        <select name="country" class="bg-transparent text-[21px] text-white font-[600]">
+          <option value="English" class="">English</option>
+        </select>
+      </div>
+
+      <div>
+        <button class="text-white text-[17px] font-[600] hover:opacity-90">
+          <div class="border-b-[1px]">Login</div>
+        </button>
+      </div>
+
+      <div>
+        <a href="./sell.html"> <button
+            class="bg-white w-[100px] h-[51px] rounded-[30px] mt-6 font-[600] text-[21px] border-[4px] -ml-1 hover:opacity-95">
+            <span class="text-2xl font-bold">+</span> SELL
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Main Navbar -->
+  <!-- uppernavbar -->
+
+  <div id="navId" class="flex justify-center h-[70px] bg-[#f14435]  ">
+    <div class="flex justify-between max-w-[1256.72px] w-[80vw] space-x-7 ">
+
+      <div class="mt-[10px] hover:opacity-90">
+        <a href="./index.html"><img class="h-[50px] w-[50px]" src="./assets/images/navbar/uphello.png" alt="Logo" /></a>
+      </div>
+
+      <div class="min-[1356px]:hidden flex items-center">
+        <button onclick="openNav()"><img class="w-8 h-8 hover:opacity-75" src="./assets/images/navbar/hamburger.png"
+            alt="hamburger"></button>
+      </div>
+
+      <div class="hidden min-[1356px]:flex space-x-7">
+        <div>
+          <div class="flex items-center h-[70px]">
+            <div class="bg-white rounded-l-[5px] h-[50px] w-[50px] flex items-center justify-center">
+              <img src="./assets/images/navbar/search-icon.png" class="h-[20px] w-[20px]" alt="search-icon" />
+            </div>
+
+            <div>
+              <select class="w-[187.3425px] h-[50px] rounded-r-[5px] text-lg font-semibold focus:outline-none"
+                name="country" id="country">
+                <option value="india">India</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex">
+          <input placeholder="   Find cars, Mobile phones and more.."
+            class="h-[50px] w-[362.84375px] mt-[10px] rounded-l-[5px] focus:outline-none pl-5 pr-5" type="text" />
+
+          <div class="bg-[#FDEBE7] h-[50px] w-[58.055px] mt-[10px] rounded-r-[5px] flex place-content-center">
+            <button class="hover:opacity-50">
+              <img src="./assets/images/navbar/search-icon.png " class="h-[24.375px] w-[24.375px]" alt="" />
+            </button>
+          </div>
+        </div>
+
+        <div class="h-[70px] flex">
+          <select name="country" class="bg-transparent text-[21px] focus:outline-none text-white font-[600]">
+            <option value="English" class="">English</option>
+          </select>
+        </div>
+
+        <div class="flex justify-center">
+          <button class="text-white text-[17px] font-[600] hover:opacity-90">
+            <div class="border-b-[1px]">Login</div>
+          </button>
+        </div>
+
+        <div>
+          <a href="./sell.html"> <button
+              class="bg-white w-[100px] h-[51px] rounded-[30px] mt-3 font-[600] text-[21px] border-[4px] -ml-1 hover:opacity-95">
+              <span class="text-2xl font-bold">+</span> SELL
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lower navbar -->
+  <div class="flex justify-center h-min-[40px] bg-[#F8F3F3] w-full">
+
+    <div
+      class="flex flex-col justify-start space-x-6 max-[1250px]:space-x-1 items-start max-w-[1256.72px] w-[80vw] min-[1250px]:flex-row max-[1250px]:space-y-2">
+
+      <div>
+        <select name="category" class="bg-transparent text-[#F14435] text-lg  font-semibold">
+          <option value="all-category">All Category</option>
+        </select>
+      </div>
+
+      <div>
+        <a href="./cars.html"><button
+            class="text-[#656161] text-lg font-medium font-[Inter] hover:text-black">Car</button></a>
+      </div>
+
+      <div>
+        <a href="./bikes.html"><button
+            class="text-[#656161] text-lg font-medium font-[Inter] hover:text-black">Motorcycle</button></a>
+      </div>
+
+      <div>
+        <a href="./mobiles.html"><button class="text-[#656161] text-lg font-medium font-[Inter] hover:text-black">Mobile
+            Phone</button></a>
+      </div>
+
+      <div>
+        <a href="./houses.html"><button class="text-[#656161] text-lg font-medium font-[Inter] hover:text-black">For
+            Sale: House &
+            Appartment</button></a>
+      </div>
+
+      <div>
+        <a href="./scooters.html"><button
+            class="text-[#656161] text-lg font-medium font-[Inter] hover:text-black">Scoter</button></a>
+      </div>
+
+      <div>
+        <a href=""><button class="text-[#656161] text-lg font-medium font-[Inter] hover:text-black">Commercial &
+            Other
+            Vehicle</button></a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Navbar ends -->
+
+  <!-- Image Carousel -->
+
+  <div class="slideshow-container mt-20">
+    <div class="absolute text-4xl pr-4 w-[35px] right-12 mt-[20px] cursor-pointer">
+      <i class="fa-regular fa-heart text-white"></i>
+    </div>
+    <div class="absolute text-4xl pr-4 w-[35px] right-32 mt-[20px] cursor-pointer">
+      <i class="fa-solid fa-share-nodes text-white"></i>
+    </div>
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <img src="./assets/images/seventh-page/car1.jpg">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <img src="./assets/images/seventh-page/car2.jpg">
+
+    </div>
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <img src="./assets/images/seventh-page/car3.jpg">
+
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+  </div>
+
+  <!--Big Div-->
+  <div class="w-full flex justify-center">
+    <div class="flex flex-col lg:flex-row  w-11/12 justify-center space-y-20">
+      <!--Left div-->
+      <div class="space-y-6 mt-[80px]">
+        <div class="border solid color border-[#FDEBE7] w-[750px] h-[150px] bg-[#FDEBE7]">
+          <h1 class="font-bold mt-[30px] ml-[20px] text-2xl">BMW (2018)</h1>
+          <p class="font-medium mt-[20px] ml-[20px]">
+            1.5 Ti-Vct Titanium Plus
+          </p>
+          <p class="font-mono mt-[20px] ml-[20px]">
+            <i class="fa-solid fa-gas-pump text-red-600"></i>Diesel
+          </p>
+
+          <p class="font-mono mt-[-25px] ml-[25%]">
+            <i class="fa-solid fa-gauge text-red-600"></i>
+            5341.00KM
+          </p>
+          <p class="font-mono mt-[-25px] ml-[50%]">
+            <i class="fa-solid fa-gear text-red-600"></i>
+            Automatic
+          </p>
+        </div>
+
+        <div class="border 1px solid color border-[#FDEBE7]w-[750px] h-[165px] bg-[#FDEBE7]">
+          <h1 class="font-bold mt-[40px] ml-[20px] text-2xl">OVERVIEW</h1>
+          <hr class="border 1px solid color border-[#A6A6A6] mt-[10px]" />
+
+          <div>
+            <h1 class="mt-[30px] font-bold ml-[10%]">
+              <i class="fa-solid fa-user text-red-600"></i> OWNER
+              <p class="font-normal ml-[3%]">1st</p>
+            </h1>
+          </div>
+          <div>
+            <h1 class="mt-[-50px] font-bold ml-[40%]">
+              <i class="fa-solid fa-location-dot text-red-600"></i> Location
+              <p class="font-normal ml-[4%]">India</p>
+            </h1>
+          </div>
+          <div>
+            <h1 class="mt-[-50px] font-bold ml-[70%]">
+              <i class="fa-solid fa-calendar-days text-red-600"></i>Posting
+              Date
+              <p class="font-normal ml-[6%]">05 MAY 2023</p>
+            </h1>
+          </div>
+        </div>
+        <div class="border 1px solid to-black w-[750px] h-[300px] bg-[#FDEBE7]">
+          <h1 class="font-bold text-2xl mt-[40px] ml-[30px]">DETAIL</h1>
+          <p class="mt-[60px] ml-[30px] text-[#656161]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+            deleniti dolorem nulla quidem quas? Fugiat odit veniam accusamus
+            et reiciendis corporis perferendis quia. Dolores, iste harum
+            cupiditate reiciendis cum recusandae provident repudiandae
+            incidunt cumque inventore aliquam rem dicta vero dolorem quo
+            quibusdam ipsum tempore deserunt hic ex! Consequuntur, vitae nisi
+            asperiores neque quisquam consequatur nobis eius!
+          </p>
+        </div>
+      </div>
+
+      <!--Right div-->
+      <div class="flex flex-col justify-center space-y-6 mx-20">
+        <div
+          class="w-[380px] h-[217px] border flex-col flex justify-center items-center text-3xl bg-[#FDEBE7] font-extrabold rounded-md">
+          <i class="fa fa-inr" aria-hidden="true">20,69,000</i>
+          <div class="justify-center flex flex-col items-center">
+            <button class="w-[290px] h-[60px] mt-[50px] bg-[#F14435] text-white rounded-md">
+              Make Offer
+            </button>
+          </div>
+        </div>
+        <div
+          class="border flex-col flex justify-center items-center text-3xl bg-[#FDEBE7] font-semibold rounded-md w-[380px] h-[217px]">
+          <div class="flex justify-center">
+            <img class="scale-50" src="./assets/images/seventh-page/Picture2.png" alt="" />
+            <p class="items-center justify-center flex mr-40">seller</p>
+          </div>
+          <div class="justify-center flex flex-col items-center">
+            <button class="w-[290px] h-[60px] bg-[#F14435] text-white mb-10 rounded-md">
+              Chat With Seller
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer starts  -->
+  <!--Fotter-->
+  <footer>
+    <!--First Footer-->
+    <div class="flex flex-col md:flex-row flex-wrap items-center justify-center mt-[250px] bg-[#FDEBE7] w-fit">
+
+      <div class="flex flex-wrap items-center justify-center h-fit">
+        <img class="ml-6" src="./assets/images/footer/signup.png" alt />
+      </div>
+
+      <div class="md:w-1/4 flex flex-wrap items-center  justify-center">
+        <h4 class="flex flex-wrap font-bold text-3xl ml-[30px]">TRY THE XCRINO APP</h4>
+        <p class="flex flex-wrap font-semibold text-xl ml-[30px]">
+          Buy, Sell and find just about anything using the app on your Mobile
+        </p>
+      </div>
+
+      <div class="md:w-1/3 flex flex-wrap items-center justify-center">
+        <h4 class="font-semibold text-3xl mt-[60px]">
+          GET YOUR APP TODAY
+        </h4>
+
+        <div class="flex flex-wrap justify-center  items-center w-full space-x-4 mt-[30px]">
+          <div class="flex flex-wrap justify-center bg-black rounded-md w-[150px] h-[53px]">
+            <p class="text-white text-sm">
+              <i class="fa-brands fa-apple"></i> &nbsp;Download to the
+            </p>
+            <p class="text-white">APPLE STORE</p>
+          </div>
+          <div class="flex flex-wrap flex-col justify-center items-center bg-black rounded-md w-[150px] h-[53px]">
+            <p class="text-white text-sm">
+              <i class="fa-brands fa-google-play"></i> &nbsp;Get it on
+            </p>
+            <p class="text-white">GOOGLE PLAY</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Second Footer-->
+
+    <div class="flex justify-evenly w-full h-[230px] bg-[#FFDFD8]">
+      <div class="mt-[50px]">
+        <h4 class="font-bold">POPULAR LOCATION</h4>
+        <p class="text-[#656161]">Kolkata</p>
+        <p class="text-[#656161]">Delhi</p>
+        <p class="text-[#656161]">UttarPardesh</p>
+        <p class="text-[#656161]">Haryana</p>
+      </div>
+
+      <div class="mt-[50px]">
+        <h4 class="font-bold">TRADING LOCATION</h4>
+        <p class="text-[#656161]">Mumbai</p>
+        <p class="text-[#656161]">Rajasthan</p>
+        <p class="text-[#656161]">Punjab</p>
+        <p class="text-[#656161]">Kolkata</p>
+      </div>
+
+      <div class="mt-[50px]">
+        <h4 class="font-bold">ABOUT US</h4>
+        <p class="text-[#656161]">About xcrino</p>
+        <p class="text-[#656161]">Contact Us</p>
+      </div>
+
+      <div class="mt-[50px]">
+        <h4 class="font-bold">XCRINO</h4>
+        <p class="text-[#656161]">Help</p>
+        <p class="text-[#656161]">Privacy & Policy</p>
+        <p class="text-[#656161]">Blog</p>
+      </div>
+
+      <div class="mt-[50px] cursor-pointer">
+        <h4 class="font-bold">FOLLOW US</h4>
+        <i class="fab fa-twitter text-red-600 m-1.5 hover:opacity-70"></i>
+        <i class="fab fa-facebook text-red-600 m-1.5 hover:opacity-70"></i>
+        <i class="fab fa-instagram text-red-600 m-1.5 hover:opacity-70"></i>
+      </div>
+
+      <!--Third Footer-->
+
+      <div class="flex absolute justify-evenly w-full bg-[#F14435] h-[80px] mt-[230px]">
+        <p class="text-white text-center mt-[25px]">
+          All right reserve@2023-2029 xcrino
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- footer ends  -->
+
+  <script src="./assets/js/seventhpage.js"></script>
+</body>
+
+</html>
